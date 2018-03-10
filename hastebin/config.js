@@ -30,11 +30,7 @@
     },
 
     "storage": {
-        "type": "redis",
-        "host": "redis",
-        "port": 6379,
-        "db": 2,
-        "expire": 2592000
+        "type": "file"
     },
 
     "documents": {

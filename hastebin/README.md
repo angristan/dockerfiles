@@ -4,23 +4,37 @@
 
 [Hastebin](https://github.com/seejohnrun/haste-server) is an open-source pastebin software written in node.js.
 
-A `docker-compose.yml` example to deploy Hastebin using a Redis storage on a bind volume:
+This image uses the default file storage driver.
+
+## Usage
+
+```docker
+docker run --name hastebin -d -p 7777:7777 angristan/speedtest:latest
+```
+
+With persistance in a volume:
+
+```docker
+docker run --name hastebin -d -p 7777:7777 --mount source=hastebin,target=/app/data angristan/speedtest:latest
+```
+
+With persistance in a bind mount:
+
+```docker
+docker run --name hastebin -d -p 7777:7777 --mount type=bind,source="$(pwd)"/data,target=/app/data angristan/speedtest:latest
+```
+
+A `docker-compose.yml` example:
 
 ```yml
 version: '3'
 
 services:
-  redis:
-    restart: always
-    image: redis:4-alpine
-    volumes:
-      - ./redis:/data
-
   hastebin:
     image: angristan/hastebin:latest
     restart: always
     ports:
-      - "127.0.0.1:7777:7777"
-    depends_on:
-      - redis
+      - "7777:7777"
+    volumes:
+      - ./data:/app/data
 ```
