@@ -1,9 +1,10 @@
 # Hastebin
 
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/build/angristan/hastebin.svg)
-![https://hub.docker.com/r/angristan/hastebin/](https://images.microbadger.com/badges/image/angristan/hastebin.svg)
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/pulls/angristan/hastebin.svg)
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/stars/angristan/hastebin.svg)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/build/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/microbadger/image-size/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/microbadger/layers/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/pulls/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/stars/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
 
 [Hastebin](https://github.com/seejohnrun/haste-server) is an open-source pastebin software written in node.js.
 
