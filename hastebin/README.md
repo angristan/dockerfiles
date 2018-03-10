@@ -6,22 +6,26 @@
 
 This image uses the default file storage driver.
 
+## Features
+- Based on Alpine Linux.
+- Latest code from [seejohnrun/haste-server](https://github.com/seejohnrun/haste-server)
+
 ## Usage
 
 ```docker
-docker run --name hastebin -d -p 7777:7777 angristan/speedtest:latest
+docker run --name hastebin -d -p 80:7777 angristan/hastebin:latest
 ```
 
 With persistance in a volume:
 
 ```docker
-docker run --name hastebin -d -p 7777:7777 --mount source=hastebin,target=/app/data angristan/speedtest:latest
+docker run --name hastebin -d -p 80:7777 --mount source=hastebin,target=/app/data angristan/hastebin:latest
 ```
 
 With persistance in a bind mount:
 
 ```docker
-docker run --name hastebin -d -p 7777:7777 --mount type=bind,source="$(pwd)"/data,target=/app/data angristan/speedtest:latest
+docker run --name hastebin -d -p 80:7777 --mount type=bind,source="$(pwd)"/data,target=/app/data angristan/hastebin:latest
 ```
 
 A `docker-compose.yml` example:
@@ -34,7 +38,7 @@ services:
     image: angristan/hastebin:latest
     restart: always
     ports:
-      - "7777:7777"
+      - "80:7777"
     volumes:
       - ./data:/app/data
 ```
