@@ -1,6 +1,9 @@
 # Hastebin
 
-[![](https://images.microbadger.com/badges/version/angristan/hastebin.svg)](https://microbadger.com/images/angristan/hastebin) [![](https://images.microbadger.com/badges/image/angristan/hastebin.svg)](https://microbadger.com/images/angristan/hastebin)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/build/angristan/hastebin.svg)
+![https://hub.docker.com/r/angristan/hastebin/](https://images.microbadger.com/badges/image/angristan/hastebin.svg)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/pulls/angristan/hastebin.svg)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/stars/angristan/hastebin.svg)
 
 [Hastebin](https://github.com/seejohnrun/haste-server) is an open-source pastebin software written in node.js.
 

@@ -1,6 +1,9 @@
 # Searx
 
-[![](https://images.microbadger.com/badges/version/angristan/searx.svg)](https://microbadger.com/images/angristan/searx) [![](https://images.microbadger.com/badges/image/angristan/searx.svg)](https://microbadger.com/images/angristan/searx)
+![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/build/angristan/searx.svg)
+![https://hub.docker.com/r/angristan/searx/](https://images.microbadger.com/badges/image/angristan/searx.svg)
+![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/pulls/angristan/searx.svg)
+![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/stars/angristan/searx.svg)
 
 ![](https://i.goopics.net/ls.png)
 
