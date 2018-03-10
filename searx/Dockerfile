@@ -1,5 +1,7 @@
 FROM alpine:3.7
 
+LABEL maintainer="Angristan <angristan@pm.me>"
+
 ARG VERSION=0.14.0
 
 ENV BASE_URL=False IMAGE_PROXY=False \
@@ -35,7 +37,5 @@ COPY run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
 
 EXPOSE 8888
-
-LABEL maintainer="Angristan <angristan@pm.me>"
 
 CMD ["run.sh"]
