@@ -1,5 +1,7 @@
 # Hastebin
 
+[![](https://images.microbadger.com/badges/version/angristan/hastebin.svg)](https://microbadger.com/images/angristan/hastebin) [![](https://images.microbadger.com/badges/image/angristan/hastebin.svg)](https://microbadger.com/images/angristan/hastebin)
+
 [Hastebin](https://github.com/seejohnrun/haste-server) is an open-source pastebin software written in node.js.
 
 A `docker-compose.yml` example to deploy Hastebin using a Redis storage on a bind volume:
