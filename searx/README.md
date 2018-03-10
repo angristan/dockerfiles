@@ -39,12 +39,12 @@ version: '3'
 
 services:
   searx:
+    container_name: searx
     image: angristan/searx:latest
     restart: always
+    ports:
+      - "80:8888"
     environment:
       - IMAGE_PROXY=true
       - BASE_URL=https://searx.angristan.xyz
-    ports:
-      - "80:8888"
-    restart: always
 ```

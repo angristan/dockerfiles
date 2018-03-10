@@ -39,10 +39,11 @@ version: '3'
 
 services:
   hastebin:
+    container_name: hastebin
     image: angristan/hastebin:latest
     restart: always
-    ports:
-      - "80:7777"
     volumes:
       - ./data:/app/data
+    ports:
+      - "80:7777"
 ```
