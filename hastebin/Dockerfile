@@ -14,6 +14,8 @@ RUN npm install
 
 COPY rootfs /
 
+RUN chmod +x /usr/local/bin/run.sh
+
 EXPOSE 7777
 
-CMD [ "/bin/sh", "run.sh" ]
+CMD ["run.sh"]
