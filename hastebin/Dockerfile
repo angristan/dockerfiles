@@ -5,12 +5,11 @@ LABEL maintainer="Stanislas Lange angristan@pm.me"
 ENV UID=4242 GID=4242
 
 RUN apk -U upgrade \
-    && apk add git su-exec \
-    && git clone https://github.com/seejohnrun/haste-server.git /app
-
-WORKDIR /app
-
-RUN npm install
+    && apk --no-cache add git su-exec \
+    && git clone https://github.com/seejohnrun/haste-server.git /app \
+    && cd /app \
+    && npm install \
+    && npm cache clean
 
 COPY rootfs /
 
