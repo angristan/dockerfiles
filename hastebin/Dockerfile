@@ -9,7 +9,7 @@ WORKDIR /app
 
 RUN npm install
 
-COPY ./config.js /app/
+ADD ./config.js /app/
 
 EXPOSE 7777
 
