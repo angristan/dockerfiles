@@ -1,19 +1,21 @@
 # Hastebin
 
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/build/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/microbadger/image-size/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/microbadger/layers/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/pulls/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
-![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/stars/angristan/hastebin.svg?maxAge=2592000&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/build/angristan/hastebin.svg?maxAge=3600&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/microbadger/image-size/angristan/hastebin.svg?maxAge=3600&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/microbadger/layers/angristan/hastebin.svg?maxAge=3600&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/pulls/angristan/hastebin.svg?maxAge=3600&style=flat-square)
+![https://hub.docker.com/r/angristan/hastebin/](https://img.shields.io/docker/stars/angristan/hastebin.svg?maxAge=3600&style=flat-square)
 
 [Hastebin](https://github.com/seejohnrun/haste-server) is an open-source pastebin software written in node.js.
 
-This image uses the default file storage driver (no expiration).
+This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/hastebin/).
 
 ## Features
+
 - Based on Alpine Linux.
 - Latest code from [seejohnrun/haste-server](https://github.com/seejohnrun/haste-server)
 - Run in unprivileged mode as `$UID:$GID` (`4242:4242` by default)
+- Uses the default file storage driver (no expiration).
 
 ## Usage
 
