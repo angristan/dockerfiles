@@ -19,29 +19,40 @@ This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/h
 docker run -d \
   --name hastebin \
   -p 80:7777 \
-  -e UID=4242 \
-  -e GID=4242 \
   angristan/hastebin:latest
 ```
 
-With persistance in a volume:
+As said above, the container will run as `4242:4242` by default, but you can specify the `UID` and `GID` yourself:
 
 ```docker
 docker run -d \
   --name hastebin \
-  --mount source=hastebin,target=/app/data
   -p 80:7777 \
   -e UID=4242 \
   -e GID=4242 \
   angristan/hastebin:latest
 ```
 
-With persistance in a bind mount:
+By default, the container will create a volume to store `/app/data`. This is where your pastes will be stored.
+
+You can specify a volume yourself:
 
 ```docker
 docker run -d \
   --name hastebin \
-  --mount type=bind,source="$(pwd)"/data,target=/app/data
+  --mount source=hastebin,target=/app/data \
+  -p 80:7777 \
+  -e UID=4242 \
+  -e GID=4242 \
+  angristan/hastebin:latest
+```
+
+Or use a bind mount:
+
+```docker
+docker run -d \
+  --name hastebin \
+  --mount type=bind,source="$(pwd)"/data,target=/app/data \
   -p 80:7777 \
   -e UID=4242 \
   -e GID=4242 \
