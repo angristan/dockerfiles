@@ -1,6 +1,7 @@
 FROM node:6-alpine
 
-LABEL maintainer="Stanislas Lange angristan@pm.me"
+LABEL maintainer="Angristan angristan@pm.me"
+LABEL source="https://github.com/Angristan/dockerfiles/tree/master/searx"
 
 ENV UID=4242 GID=4242
 
