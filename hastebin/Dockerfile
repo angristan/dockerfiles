@@ -1,7 +1,7 @@
 FROM node:6-alpine
 
 LABEL maintainer="Angristan angristan@pm.me"
-LABEL source="https://github.com/Angristan/dockerfiles/tree/master/searx"
+LABEL source="https://github.com/Angristan/dockerfiles/tree/master/hastebin"
 
 ENV UID=4242 GID=4242
 
