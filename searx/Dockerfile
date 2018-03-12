@@ -4,11 +4,12 @@ LABEL maintainer="Angristan <angristan@pm.me>"
 
 ARG VERSION=0.14.0
 
-ENV BASE_URL=False IMAGE_PROXY=False \
-    UID=991 GID=991
+ENV UID=991 GID=991 \
+    BASE_URL=False \
+    IMAGE_PROXY=False
 
 RUN apk -U upgrade \
- && apk add -t build-dependencies \
+ && apk add --no-cache -t build-dependencies \
     build-base \
     python-dev \
     libffi-dev \
@@ -17,7 +18,7 @@ RUN apk -U upgrade \
     openssl-dev \
     tar \
     ca-certificates \
- && apk add \
+ && apk add --no-cache \
     su-exec \
     python \
     libxml2 \
@@ -29,8 +30,7 @@ RUN apk -U upgrade \
  && wget -qO- https://github.com/asciimoo/searx/archive/v${VERSION}.tar.gz | tar xz --strip 1 \
  && pip install --no-cache -r requirements.txt \
  && sed -i "s/127.0.0.1/0.0.0.0/g" searx/settings.yml \
- && apk del build-dependencies \
- && rm -f /var/cache/apk/*
+ && apk del build-dependencies
 
 COPY run.sh /usr/local/bin/run.sh
 
