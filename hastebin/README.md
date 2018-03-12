@@ -33,6 +33,8 @@ docker run -d \
   angristan/hastebin:latest
 ```
 
+### Volume
+
 By default, the container will create a volume to store `/app/data`. This is where your pastes will be stored.
 
 You can specify a volume yourself:
@@ -58,6 +60,8 @@ docker run -d \
   -e GID=4242 \
   angristan/hastebin:latest
 ```
+
+### Docker Compose
 
 A `docker-compose.yml` example:
 
