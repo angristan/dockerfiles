@@ -1,6 +1,7 @@
 FROM alpine:3.7
 
 LABEL maintainer="Angristan <angristan@pm.me>"
+LABEL source="https://github.com/Angristan/dockerfiles/tree/master/isso"
 
 ARG ISSO_VER=0.10.6
 
