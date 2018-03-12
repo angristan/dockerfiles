@@ -15,6 +15,8 @@ COPY rootfs /
 
 RUN chmod +x /usr/local/bin/run.sh
 
+VOLUME /app/data
+
 EXPOSE 7777
 
 CMD ["run.sh"]
