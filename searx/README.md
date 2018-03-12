@@ -1,10 +1,6 @@
 # Searx
 
-![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/build/angristan/searx.svg?maxAge=3600&style=flat-square)
-![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/microbadger/image-size/angristan/searx.svg?maxAge=3600&style=flat-square)
-![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/microbadger/layers/angristan/searx.svg?maxAge=3600&style=flat-square)
-![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/pulls/angristan/searx.svg?maxAge=3600&style=flat-square)
-![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/stars/angristan/searx.svg?maxAge=3600&style=flat-square)
+![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/build/angristan/searx.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/microbadger/image-size/angristan/searx.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/microbadger/layers/angristan/searx.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/pulls/angristan/searx.svg?maxAge=3600&style=flat-square) ![https://hub.docker.com/r/angristan/searx/](https://img.shields.io/docker/stars/angristan/searx.svg?maxAge=3600&style=flat-square)
 
 ![](https://i.goopics.net/ls.png)
 
