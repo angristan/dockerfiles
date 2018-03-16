@@ -4,7 +4,7 @@
 
 ![](https://i.imgur.com/J50tnoC.png)
 
-[Diaspora](https://diasporafoundation.org/) is a nonprofit, user-owned, distributed social network that is based upon the free Diaspora software. Diaspora consists of a group of independently owned nodes (called pods) which interoperate to form the network. As of March 2014, there are more than 1 million Diaspora accounts.
+[Diaspora](https://diasporafoundation.org/) is a nonprofit, user-owned, distributed social network that is based upon the free Diaspora software. Diaspora consists of a group of independently owned nodes (called pods) which interoperate to form the network.
 
 This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/diaspora/).
 
@@ -30,9 +30,9 @@ The image will not work *as-is*, it requires a command to start and other servic
 
 ### Configuration files
 
-**Before** doing anything, copy the [database.yml.exemple](https://github.com/diaspora/diaspora/blob/develop/config/database.yml.example) to your current folder and add the correct values (which should be the ENVIRONMENT postgres viariable below).
+**Before** doing anything, copy the [database.yml.exemple](https://github.com/diaspora/diaspora/blob/develop/config/database.yml.example) to your current folder and add the correct values (which should be the postgres ENVIRONMENT viariables below).
 
-Do the same with [diaspora.yml.example](https://github.com/diaspora/diaspora/blob/develop/config/diaspora.yml.example) and *read it* completely. Diaspora won't work with the defaults.
+Do the same with [diaspora.yml.example](https://github.com/diaspora/diaspora/blob/develop/config/diaspora.yml.example) and **read it** completely. Diaspora won't work with the defaults.
 
 FYI you will need to modify these at least:
 
@@ -140,7 +140,7 @@ I assume you're using another container for HTTPS, but feel free to use this as 
 
 ### Installation
 
-When running the instance for the first time, run both commands to setup and DB:
+When running the instance for the first time, run this command to setup the database:
 
 ```docker
 docker-compose run unicorn bin/rake db:create db:migrate
@@ -152,7 +152,7 @@ Then compile the assets:
 docker-compose run unicorn bin/rake assets:precompile
 ```
 
-Then you can lauch your pod:
+You can now lauch your pod!
 
 ```
 docker-compose up -d
@@ -166,8 +166,10 @@ Modify the versions in your `docker-compose.yml`, then pull the new images:
 docker-compose pull
 ```
 
+Update the database:
+
 ```docker
-docker-compose run unicorn bin/rake db:create db:migrate
+docker-compose run unicorn bin/rake db:migrate
 ```
 
 Then compile the assets:
