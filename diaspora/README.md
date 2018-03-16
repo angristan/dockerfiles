@@ -16,7 +16,7 @@ This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/d
 
 ### Build-time variables
 
-- **DIASPORA_VER** : version of Diaspora.
+- **DIASPORA_VER** : Diaspora version (0.7.3.1)
 - **GID** : diaspora group id (942)
 - **UID** : diaspora user id (942)
 
