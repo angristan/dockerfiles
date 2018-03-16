@@ -143,13 +143,13 @@ I assume you're using another container for HTTPS, but feel free to use this as 
 When running the instance for the first time, run this command to setup the database:
 
 ```docker
-docker-compose run unicorn bin/rake db:create db:migrate
+docker-compose run --rm unicorn bin/rake db:create db:migrate
 ```
 
 Then compile the assets:
 
 ```docker
-docker-compose run unicorn bin/rake assets:precompile
+docker-compose run --rm unicorn bin/rake assets:precompile
 ```
 
 You can now lauch your pod!
@@ -169,13 +169,13 @@ docker-compose pull
 Update the database:
 
 ```docker
-docker-compose run unicorn bin/rake db:migrate
+docker-compose run --rm unicorn bin/rake db:migrate
 ```
 
 Then compile the assets:
 
 ```docker
-docker-compose run unicorn bin/rake assets:precompile
+docker-compose run --rm unicorn bin/rake assets:precompile
 ```
 
 Recreate containers with new images:
