@@ -37,7 +37,7 @@ WORKDIR /diaspora
 
 RUN wget -qO- https://github.com/diaspora/diaspora/archive/v$DIASPORA_VER.tar.gz | tar xz --strip 1 \
     && mkdir /diaspora/log \
-    && cp config/database.yml.example config/database.yml && ls
+    && cp config/database.yml.example config/database.yml
 
 RUN gem install bundler \
     && script/configure_bundler \
