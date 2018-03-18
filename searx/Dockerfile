@@ -28,7 +28,7 @@ RUN apk -U upgrade \
     tini \
     py2-pip \
  && mkdir /usr/local/searx && cd /usr/local/searx \
- && wget -qO- https://github.com/asciimoo/searx/archive/v${SEARX_VER}}.tar.gz | tar xz --strip 1 \
+ && wget -qO- https://github.com/asciimoo/searx/archive/v${SEARX_VER}.tar.gz | tar xz --strip 1 \
  && pip install --no-cache -r requirements.txt \
  && sed -i "s/127.0.0.1/0.0.0.0/g" searx/settings.yml \
  && apk del build-dependencies
