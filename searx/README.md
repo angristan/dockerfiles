@@ -41,7 +41,7 @@ docker run -d \
   -e BASE_URL=https://searx.domain.tld \
   -e UID=4242 \
   -e GID=4242 \
-  angristan/searx:latest
+  angristan/searx:0.14.0
 ```
 
 A `docker-compose.yml` example:
