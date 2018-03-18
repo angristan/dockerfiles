@@ -1,3 +1,3 @@
 #!/bin/sh
-chown -R $UID:$GID /db /config
-exec su-exec $UID:$GID /sbin/tini -- isso -c /config/isso.conf run
+chown -R $UID:$GID /isso/
+exec su-exec $UID:$GID /sbin/tini -- isso -c /isso/config/isso.conf run
