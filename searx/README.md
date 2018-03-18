@@ -18,20 +18,30 @@ It provides basic privacy by mixing your queries with searches on other platform
 - Based on Alpine Linux.
 - Latest code from [asciimoo/searx](https://github.com/asciimoo/searx)
 - A unique secret key is generated when booting the first time.
+- Ran as an unprivileged user *(see [environment variables](#environment-variables))*
 
 ## Build-time variables
 
-- **VERSION** : Searx version
+- **SEARX_VER** : Searx version
 
 ## Environment variables
 
 - **IMAGE_PROXY** : enables images proxying *(default : False)*
 - **BASE_URL** : http://domain.tld *(default : False)*
+- **GID** : isso group id *(default : 4242)*
+- **UID** : isso user id *(default : 4242)*
 
 ## Usage
 
 ```docker
-docker run --name searx -d -p 80:8888 -e IMAGE_PROXY=true -e BASE_URL=https://searx.domain.tld angristan/searx:latest
+docker run -d \
+  --name searx \
+  -p 80:8888 \
+  -e IMAGE_PROXY=true \
+  -e BASE_URL=https://searx.domain.tld \
+  -e UID=4242 \
+  -e GID=4242 \
+  angristan/searx:latest
 ```
 
 A `docker-compose.yml` example:
@@ -42,11 +52,13 @@ version: '3'
 services:
   searx:
     container_name: searx
-    image: angristan/searx:latest
+    image: angristan/searx:0.14.0
     restart: always
     ports:
       - "80:8888"
     environment:
       - IMAGE_PROXY=true
-      - BASE_URL=https://searx.angristan.xyz
+      - BASE_URL=https://searx.domain.tld
+      - UID=4242
+      - GID=4242
 ```
