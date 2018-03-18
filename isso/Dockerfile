@@ -33,6 +33,6 @@ RUN chmod +x /usr/local/bin/run.sh
 
 EXPOSE 8080
 
-VOLUME /db /config
+VOLUME /isso/database
 
 CMD ["run.sh"]
