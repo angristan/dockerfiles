@@ -27,8 +27,7 @@ This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/i
 
 ### Volumes
 
-- **/config** : location of configuration files
-- **/db** : location of the SQLite database
+- **/isso/database** : location of the SQLite database
 
 ### Port
 
@@ -36,13 +35,15 @@ This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/i
 
 ## Usage
 
+### Configuration
+
 First, create a `./config/isso.conf`.
 
 Here is an example:
 
 ```ini
 [general]
-dbpath = /db/comments.db
+dbpath = /isso/database/comments.db
 host = https://isso.domain.tld/
 
 [server]
@@ -50,3 +51,38 @@ listen = http://0.0.0.0:8080/
 ```
 
 Please look at the [documentation](https://posativ.org/isso/docs/configuration/server/) for more options.
+
+### Running the container
+
+```docker
+docker run -d \
+  --name isso \
+  --mount type=bind,source="$(pwd)"/database,target=/isso/database \
+  --mount type=bind,source="$(pwd)"/config,target=/isso/config \
+  -p 80:7777 \
+  -e UID=4242 \
+  -e GID=4242 \
+  angristan/isso:latest
+```
+
+### Docker Compose
+
+A `docker-compose.yml` example:
+
+```yml
+version: '3'
+
+services:
+  isso:
+    container_name: isso
+    image: angristan/isso:latest
+    restart: always
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./config:/isso/config
+      - ./database:/isso/database
+    environment:
+     - UID=4242
+     - GID=4242
+```
