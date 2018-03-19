@@ -16,10 +16,6 @@ This image is meant to be used to run a Tor Relay.
 - Latest Tor stable version installed from the [https://www.torproject.org/docs/debian.html.en](https://www.torproject.org/docs/debian.html.en).
 - Ran as an unprivileged user *(see [environment variables](#environment-variables))*
 
-### Build-time variables
-
-- **TOR_VER** : Tor version (`0.3.2.10-1`)
-
 ### Environment variables
 
 - **GID** : tor group id *(default : 4242)*
@@ -47,7 +43,7 @@ docker run -d \
   --mount type=bind,source="$(pwd)"/data,target=/var/lib/tor \
   -e UID=4242 \
   -e GID=4242 \
-  angristan/tor:0.3.2.10
+  angristan/tor:latest
 ```
 
 A `docker-compose.yml` example:
@@ -58,7 +54,7 @@ version: '3'
 services:
   searx:
     container_name: tor
-    image: angristan/tor:0.3.2.10
+    image: angristan/tor:latest
     restart: always
     volumes:
       - ./torrc:/etc/tor/torrc
