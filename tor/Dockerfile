@@ -1,4 +1,4 @@
-FROM debian:9.4-slim
+FROM debian:stretch-slim
 
 LABEL maintainer="Angristan <angristan@pm.me>"
 LABEL source="https://github.com/Angristan/dockerfiles/tree/master/tor"
