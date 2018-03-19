@@ -2,7 +2,7 @@ FROM ruby:2.4.3-slim-stretch
 
 LABEL maintainer="Angristan angristan@pm.me"
 
-ARG DIASPORA_VER=0.7.3.1
+ARG DIASPORA_VER=0.7.4.0
 
 ENV RAILS_ENV=production \
     UID=942 \
