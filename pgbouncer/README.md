@@ -6,5 +6,5 @@ Based on [wonderfaill/pgbouncer](https://github.com/Wonderfall/dockerfiles/tree/
 
 ## Environment variables
 
-- **GID** : user id *(default : 991)*
-- **UID** : group id *(default : 991)*
+- **GID** : user id *(default : 936)*
+- **UID** : group id *(default : 936)*
