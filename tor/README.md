@@ -49,7 +49,7 @@ docker run -d \
 A `docker-compose.yml` example:
 
 ```yml
-version: '3'
+version: '2.3'
 
 services:
   searx:

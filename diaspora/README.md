@@ -47,7 +47,7 @@ FYI you will need to modify these at least:
 Here is an exemple `docker-compose.yml`:
 
 ```yaml
-version: '3'
+version: '2.3'
 
 services:
   postgres:
