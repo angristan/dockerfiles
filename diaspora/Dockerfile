@@ -1,4 +1,4 @@
-FROM ruby:2.4.3-slim-stretch
+FROM ruby:2.4.4-slim-stretch
 
 LABEL maintainer="Angristan angristan@pm.me"
 
