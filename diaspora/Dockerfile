@@ -1,6 +1,6 @@
 FROM ruby:2.4.4-slim-stretch
 
-LABEL maintainer="Angristan angristan@pm.me"
+LABEL maintainer="Angristan https://github.com/Angristan/dockerfiles"
 
 ARG DIASPORA_VER=0.7.4.0
 

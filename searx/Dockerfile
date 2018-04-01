@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-LABEL maintainer="Angristan <angristan@pm.me>"
+LABEL maintainer="Angristan https://github.com/Angristan/dockerfiles"
 LABEL source="https://github.com/Angristan/dockerfiles/tree/master/searx"
 
 ARG SEARX_VER=0.14.0

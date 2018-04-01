@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-LABEL maintainer="Angristan <angristan@pm.me>"
+LABEL maintainer="Angristan https://github.com/Angristan/dockerfiles"
 LABEL source="https://github.com/Angristan/dockerfiles/tree/master/tor"
 
 ENV GID=4242 UID=4242

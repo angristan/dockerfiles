@@ -1,5 +1,7 @@
 FROM alpine:3.7
 
+LABEL maintainer="Angristan https://github.com/Angristan/dockerfiles"
+
 ENV UID=936 GID=936
 
 RUN apk -U --no-cache add \
