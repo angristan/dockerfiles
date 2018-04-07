@@ -124,13 +124,17 @@ docker build -t pleroma .
 
 I prefer the later because it's more verbose.
 
-You can now laucnh your instance:
+Setup the database:
+
+```
+docker-compose run --rm web mix ecto.migrate
+```
+
+You can now launch your instance:
 
 ```
 docker-compose up -d
 ```
-
-You don't need to worry about database migration as it's included in the entrypoint.
 
 Check if everything went well with:
 
@@ -151,6 +155,7 @@ docker-compose pull # update the PostgreSQL if needed
 docker-compose build .
 # or
 docker build -t pleroma .
+docker-compose run --rm web mix ecto.migrate # migrate the database if needed
 docker-compose up -d # recreate the containers if needed
 ```
 

@@ -15,10 +15,6 @@ RUN apk -U upgrade \
 RUN addgroup -g ${GID} pleroma \
     && adduser -h /pleroma -s /bin/sh -D -G pleroma -u ${UID} pleroma
 
-COPY ./entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
-
 USER pleroma
 WORKDIR pleroma
 
