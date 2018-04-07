@@ -54,7 +54,7 @@ services:
     container_name: pleroma_web
     restart: always
     ports:
-      - "127.0.0.1:400:4000"
+      - "127.0.0.1:4000:4000"
     volumes:
       - ./uploads:/pleroma/uploads
     depends_on:
