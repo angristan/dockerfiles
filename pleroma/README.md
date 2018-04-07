@@ -6,6 +6,10 @@ It actually consists of two components: a backend, named simply Pleroma, and a u
 
 Its main advantages are its lightness and speed.
 
+![Pleroma](https://i.imgur.com/VftiTlR.png)
+
+*Pleromians trying to understand the memes*
+
 ## Features
 
 - Based on the elixir:alpine image
