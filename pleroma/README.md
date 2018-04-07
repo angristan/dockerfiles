@@ -1,6 +1,6 @@
 # Pleroma
 
-Pleroma is a federated social networking platform, compatible with GNU social and other OStatus implementations. It is free software licensed under the AGPLv3.
+[Pleroma](https://pleroma.social/) is a federated social networking platform, compatible with GNU social and other OStatus implementations. It is free software licensed under the AGPLv3.
 
 It actually consists of two components: a backend, named simply Pleroma, and a user-facing frontend, named Pleroma-FE.
 
@@ -17,7 +17,7 @@ Thus you will need to build the image yourself, but I explain how to do it below
 
 ## Build-time variables
 
-- **PLEROMA_VER** : Pleroma version (latest commit of the `develop` branch by default)
+- **PLEROMA_VER** : Pleroma version (latest commit of the [`develop` branch](https://git.pleroma.social/pleroma/pleroma) by default)
 - **GID** : pleroma group id (`911`)
 - **UID** : pleroma user id (`911`)
 
