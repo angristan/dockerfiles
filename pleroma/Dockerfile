@@ -1,7 +1,5 @@
 FROM elixir:1.6-alpine
 
-LABEL maintainer="Angristan https://github.com/Angristan/dockerfiles"
-
 ENV UID=911 GID=911 \
     MIX_ENV=prod
 
