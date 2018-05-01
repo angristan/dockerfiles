@@ -16,7 +16,7 @@ This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/d
 
 ### Build-time variables
 
-- **DIASPORA_VER** : Diaspora version (0.7.4.1)
+- **DIASPORA_VER** : Diaspora version (0.7.5.0)
 - **GID** : diaspora group id (942)
 - **UID** : diaspora user id (942)
 
@@ -70,7 +70,7 @@ services:
 
   unicorn:
     container_name: diaspora_unicorn
-    image: angristan/diaspora:0.7.4.1
+    image: angristan/diaspora:0.7.5.0
     restart: always
     command: bin/bundle exec unicorn -c config/unicorn.rb -E production
     volumes:
@@ -83,7 +83,7 @@ services:
 
   sidekiq:
     container_name: diaspora_sidekiq
-    image: angristan/diaspora:0.7.4.1
+    image: angristan/diaspora:0.7.5.0
     restart: always
     command: bin/bundle exec sidekiq
     volumes:
