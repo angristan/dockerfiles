@@ -29,7 +29,7 @@ Thus you will need to build the image yourself, but I explain how to do it below
 
 ### Installation
 
-Create a folder for your Pleroma instance. Inside, you should have `Dockerfile`, `entrypoint.sh` and `docker-compose.yml` from this repo.
+Create a folder for your Pleroma instance. Inside, you should have `Dockerfile` and `docker-compose.yml` from this repo.
 
 Here is the `docker-compose.yml`. You should change the `POSTGRES_PASSWORD` variable.
 
