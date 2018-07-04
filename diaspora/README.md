@@ -96,7 +96,7 @@ services:
 
   nginx:
     container_name: diaspora_nginx
-    image: nginx:1.13
+    image: nginx:stable
     restart: always
     volumes:
       - ./nginx-vhost.conf:/etc/nginx/conf.d/default.conf:ro
