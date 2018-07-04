@@ -2,7 +2,7 @@ FROM ruby:2.4-slim-stretch
 
 LABEL maintainer="Angristan https://github.com/Angristan/dockerfiles"
 
-ARG DIASPORA_VER=0.7.5.0
+ARG DIASPORA_VER=0.7.6.0
 
 ENV RAILS_ENV=production \
     UID=942 \
