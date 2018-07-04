@@ -10,7 +10,7 @@ This image is available on the [Docker Hub](https://hub.docker.com/r/angristan/d
 
 ## Features
 
-- Based on the official [ruby:2.4.3-slim-stretch](https://hub.docker.com/_/ruby/) image
+- Based on the official [ruby:2.4-slim-stretch](https://hub.docker.com/_/ruby/) image
 - Running the latest stable version of [diaspora/diaspora](https://github.com/diaspora/diaspora)
 - Ran as an unprivileged user
 
