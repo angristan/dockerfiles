@@ -16,7 +16,7 @@ Its main advantages are its lightness and speed.
 - Ran as an unprivileged user
 - It works great
 
-Sadly, this is not a reusable (e.g. I can't upload it to the Docker Hub), because for now Pleroma needs to compile the configuration. 😢 
+Sadly, this is not a reusable (e.g. I can't upload it to the Docker Hub), because for now Pleroma needs to compile the configuration. 😢
 Thus you will need to build the image yourself, but I explain how to do it below.
 
 ## Build-time variables
