@@ -1,0 +1,4 @@
+pipeline:
+  docker:
+    image: angristan/hastebin
+    tags: latest
