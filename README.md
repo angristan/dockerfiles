@@ -1,6 +1,6 @@
 # dockerfiles 🐋
 
-This repo is deprecated. I've split my images into seperate repos to do automated builds with Drone.
+**This repo is deprecated**. I've split my images into seperate repos to do automated builds with Drone.
 
 See:
 
